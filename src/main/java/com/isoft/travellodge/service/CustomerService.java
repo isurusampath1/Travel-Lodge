@@ -12,6 +12,7 @@ public class CustomerService {
     private CustomerRepository customerRepository;
 
 
+    //save the customer
     public void addNewCustomer(Customer customer) {
         customerRepository.save(customer);
     }

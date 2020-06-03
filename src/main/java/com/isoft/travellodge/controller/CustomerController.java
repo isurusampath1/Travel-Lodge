@@ -13,6 +13,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
+    //save new customer
     @PostMapping("/addNewCustomer")
     public String addNewCustomer(Customer customer) {
         customerService.addNewCustomer(customer);
